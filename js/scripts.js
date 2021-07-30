@@ -137,7 +137,9 @@
 						  });
 						});
 						
-	
+	function nameAlert(){
+      alert("O nome da imagem não pode conter pontos (somente o .extensão) ou a imagem será invalida e substituida pela padrão");
+   }
      
   /************** Search ****************/
 		$(function() {

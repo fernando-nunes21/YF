@@ -6,13 +6,19 @@
         private $email;
         private $password;
         private $accountType;
+        private $profilename;
+        private $biograph;
+        private $profileimage;
         
-        function User($idUser,$username,$email,$pass,$accountType){
+        function __construct($idUser,$username,$email,$pass,$accountType,$profilename,$biograph,$profileimage){
             $this->idUser = $idUser;
             $this->username = $username;
             $this->email = $email;
             $this->password = $pass;
             $this->accountType = $accountType;
+            $this->profilename = $profilename;
+            $this->biograph = $biograph;
+            $this->profileimage = $profileimage;
         }
 
         function getIdUser(){
@@ -33,6 +39,18 @@
 
         function getAccountType(){
             return $this->accountType;
+        }
+
+        function getProfileName(){
+            return $this->profilename;
+        }
+
+        function getBiograph(){
+            return $this->biograph;
+        }
+
+        function getProfileImage(){
+            return $this->profileimage;
         }
 
     }

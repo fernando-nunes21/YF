@@ -231,7 +231,7 @@ div#page-wrapper {
 
 .custom-nav > li > a:hover,
 .custom-nav > li > a:active {
-    color:#EA57A3;
+    color:#3CB371;
 	background-color:#292929;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -242,22 +242,18 @@ div#page-wrapper {
 
 .custom-nav > li.nav-active > a {
     background-color:#111;
-    color:#EA57A3;
+    color:#3CB371;
 }
 
 .custom-nav > li.nav-active > ul{
     display: block;
 }
 
-.custom-nav > li.nav-active > a:hover {
-    
-}
-
 .custom-nav > li.active > a,
 .custom-nav > li.active > a:hover,
 .custom-nav > li.active > a:focus {
     background-color: #111;
-    color:#EA57A3;
+    color:#3CB371;
 }
 
 ul.dropdown-menu.drp-mnu li {
@@ -424,7 +420,7 @@ h5.left-nav-title {
 
 .left-side-collapsed .custom-nav li a span {
     position: absolute;
-    background:#EA57A3;
+    background:#3CB371;
     padding: 11.7px;
     left: 52px;
     top: 1px;
@@ -445,7 +441,7 @@ h5.left-nav-title {
     position: absolute;
     pointer-events: none;
     border-color: rgba(0, 0, 0, 0);
-    border-right-color:#EA57A3;
+    border-right-color:#3CB371;
     border-width: 6px;
     margin-top: -6px;
 }
@@ -469,7 +465,7 @@ h5.left-nav-title {
 .left-side-collapsed .custom-nav > li.nav-hover > a,
 .left-side-collapsed .custom-nav > li.nav-hover.active > a {
     background:#111;
-    color:#EA57A3;
+    color:#3CB371;
 }
 
 .left-side-collapsed .custom-nav li.nav-hover a span {
@@ -478,7 +474,7 @@ h5.left-nav-title {
 }
 
 .left-side-collapsed .custom-nav li.nav-hover.active a span {
-    background:#EA57A3;
+    background:#3CB371;
     color: #fff;
 }
 
@@ -528,12 +524,13 @@ ul.nav li a span {
 -----------------------------*/
 
 .header-section {
-    background:#45B39D;
-    box-shadow: 1px 0 3px rgba(0,0,0,.15);
+    background:black;
+    box-shadow: 1px 0 2px rgba(0,0,0,.15);
     -webkit-box-shadow: 1px 0 3px rgba(0,0,0,.15);
     -moz-box-shadow: 1px 0 3px rgba(0,0,0,.15);
     -o-box-shadow: 1px 0 3px rgba(0,0,0,.15);
 	padding-bottom:2px;
+	height: 65px;
 }
 
 .header-section::after {
@@ -561,7 +558,7 @@ ul.nav li a span {
 }
 
 .toggle-btn:hover {
-    background:#EA57A3;
+    background:#3CB371;
     color: #fff;
 }
 
@@ -601,7 +598,7 @@ ul.nav li a span {
     left: 0;
     width: 200px;
     z-index: 100;
-    background: #EA57A3;
+    background: #3CB371;
     border-bottom: 1px solid #5F45BB;
     text-align: center;
         padding: 1.1em 0 1.2em;
@@ -630,8 +627,7 @@ ul.nav li a span {
 .sticky-header.left-side-collapsed .menu-right {
     margin-right: 0;
 }
-.menu-right {
-}
+
 /*-----------------------------
         MAIN CONTENT
 ------------------------------*/
@@ -658,6 +654,11 @@ ul.nav li a span {
 .main-content4{
 	min-height: 2275px !important;
 }
+
+.imageYFITOPS-size{
+	width: 100%;
+	height: auto;
+}
 /*----*/
 .search-box{
 	float:left;
@@ -674,7 +675,6 @@ ul.nav li a span {
   -webkit-transition: width 0.3s;
   -moz-transition: width 0.3s;
   transition: width 0.3s;
-  -webkit-backface-visibility: hidden;
   z-index: 999;
   border-left: 1px solid #000;
     top:0%;
@@ -722,7 +722,6 @@ ul.nav li a span {
 }
 .sb-search-submit {
    background: url('../images/search.png') no-repeat -23px 20px;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
     color: transparent;
 	border: none;
 	outline: none;
@@ -748,7 +747,7 @@ ul.nav li a span {
 	z-index: 90;
 }
 footer {
-    background:#EA57A3;
+    background:#3CB371;
     padding: 12px;
     width: 100%;
         border-top: 1px solid #423D3E;
@@ -920,7 +919,6 @@ footer  p a:hover{
   padding: 0;
 }
 .rslides li {
-  -webkit-backface-visibility: hidden;
   position: absolute;
   display:none;
   width: 100%;
@@ -1095,7 +1093,7 @@ i.arrow {
 }
 #loginpop a span{
     display: block;
-    color: #EA57A3;
+    color: #3CB371;
     background: #111;
     padding: 8px 15px;
     font-size: 0.9em;
@@ -1218,7 +1216,7 @@ fieldset#body {
   padding: 6px;
   font-size: 0.8125em;
   -webkit-apperance: none;
-  outline: none
+  outline: none;
   font-family: 'Open Sans', sans-serif;
 }
 #body label i {
@@ -1255,7 +1253,6 @@ fieldset#body {
 }
 a.top-sign {
     display: inline-block;
-    float: right;
     margin-left: 4em;
     margin-top: 0.2em;
     color: #111;
@@ -1304,7 +1301,7 @@ a.top-sign {
 	font-weight:600;
 }
 .button:hover {
-    color:#EA57A3;
+    color:#3CB371;
 }
 .inner-info {
     display: none;
@@ -1352,7 +1349,7 @@ h4.tittle {
     float: left;
     font-size: 1.2em;
     font-weight: 400;
-    color: #EA57A3;
+    color: #3CB371;
        margin-left:70%;
 }
 h4.tittle.two {
@@ -1361,7 +1358,7 @@ h4.tittle.two {
 span.new{
     display: inline-block;
     padding: 8px 13px;
-    background: #EA57A3;
+    background: #3CB371;
     font-size: 0.5em;
     color: #fff;
     -webkit-appearance: none;
@@ -1428,7 +1425,7 @@ div.jp-type-playlist div.jp-playlist a:hover {
     -webkit-border-radius: 0.4em 0.4em 0em 0em;
     -o-border-radius: 0.4em 0.4em 0em 0em;
     -moz-border-radius: 0.4em 0.4em 0em 0em;
-    border: 1px solid #EA57A3;
+    border: 1px solid #3CB371;
 }
 .price-bottom h3 {
     font-size: 2.5em;
@@ -2189,7 +2186,7 @@ li.list-group-item1 {
     margin-left:5%;
 }
 .sign-right h3{
-        color: #EA57A3;
+        color: #3CB371;
     font-weight: normal;
     font-size: 20px;
     padding: 0;
@@ -2203,7 +2200,7 @@ li.list-group-item1 {
     width: 45%;
 	margin-top:6.8%;
 }
-.sign-right input[type="text"] ,.sign-right input[type="password"] {
+.sign-right input[type="text"] ,.sign-right input[type="password"], .sign-right textarea, .sign-right input[type="file"] {
         width: 100%;
     padding: 15px 13px;
     font-weight: normal;
@@ -3046,7 +3043,6 @@ text-decoration:none;
 	}
 	a.top-sign {
 		display: inline-block;
-		float: right;
 		margin-left:2em;
 	}
 }
@@ -3095,7 +3091,6 @@ text-decoration:none;
 	}
 	a.top-sign {
 		display: inline-block;
-		float: right;
 		margin-left: 1em;
 	}
 }
@@ -3485,7 +3480,6 @@ text-decoration:none;
 	}
 	a.top-sign {
 		display: inline-block;
-		float: right;
 		margin-left: 0.3em;
 	}
 	#loginForm:after {

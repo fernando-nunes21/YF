@@ -27,13 +27,19 @@
 						<div class="modal-body modal-spa">
 							<div class="sign-grids">
 								<div class="sign">
+									<div class="sign-left">
+										<img src="images/YFITOPSREGISTER.jpg" class="imageYFITOPS-size">
+									</div>
 									<div class="sign-right">
-									    <form action="#" method="post">
+									    <form action="forms/register.php" method="post" enctype="multipart/form-data">
 											<h3>Crie sua conta! </h3>
-											<input type="text" name="username" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-											<input type="text" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-											<input type="password" name="password" value="Senha" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">											
-											<input type="submit" value="Criar Conta">
+											<input type="text" name="username" placeholder="Username" required="">
+											<input type="text" name="email" placeholder="Email" required="">	
+											<input type="password" name="password" placeholder="Senha" required="">											
+											<input type="text" name="profilename" placeholder="Nome do Perfil" required="">	
+											<textarea name="biograph" placeholder="Um pouco sobre você..." required=""></textarea>
+											<input onClick="nameAlert()" type="file" name="profileimage" accept="image/png, image/jpeg" required="">
+											<input type="submit" name="submit" value="Criar Conta">
 										</form>
 									</div>
 									<div class="clearfix"></div>								
@@ -96,24 +102,7 @@
 				</div>
 			<div id="page-wrapper">
 				<div class="inner-content">
-				      <div class="music-browse">
-							<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
-							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-							 <script>
-									$(document).ready(function() {
-									$('.popup-with-zoom-anim').magnificPopup({
-										type: 'inline',
-										fixedContentPos: false,
-										fixedBgPos: true,
-										overflowY: 'auto',
-										closeBtnInside: true,
-										preloader: false,
-										midClick: true,
-										removalDelay: 300,
-										mainClass: 'my-mfp-zoom-in'
-									});
-									});
-							</script>		
+				      <div class="music-browse">	
 						<div class="browse">
 								<div class="tittle-head two">
 									<h3 class="tittle">Recem Adicionadas! <span class="new">NOVIDADES</span></h3>
@@ -139,7 +128,7 @@
 							<div class="clearfix"></div>
 					</div>
 			<footer>
-			   <p>&copy 2021 YFITOPS. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts.</a></p>
+			   <p>&copy 2021 YFITOPS. All Rights Reserved</a></p>
 			</footer>
    	</section>
 	<script src="js/jquery.nicescroll.js"></script>
