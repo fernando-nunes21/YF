@@ -3,7 +3,11 @@
         <h1><a href="index.php">YFITOPS</a></h1>
     </div>
     <div class="logo-icon text-center">
-        <a href="index.php">Y </a>
+        <?php if($showLoginAndRegister==true){ ?>
+            <a href="index.php">Y</a>
+		<?php } if($showLoginAndRegister==false){ 
+            include 'includes/getProfileImageFromSession.php';
+        }?>
     </div>
     <div class="left-side-inner">
         <ul class="nav nav-pills nav-stacked custom-nav">
