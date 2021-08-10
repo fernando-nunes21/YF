@@ -4,7 +4,7 @@
         private $idGender;
         private $name;
 
-        function Gender($idGender,$name){
+        function  __construct($idGender,$name){
             $this->idGender = $idGender;
             $this->name = $name;
         }

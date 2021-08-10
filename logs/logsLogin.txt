@@ -1,1 +1,6 @@
-Usuário -> Fernando Esta fazendo login -> Thu, 05 Aug 21 08:53:06 +0200
+Usuário -> Fernando, do Email -> fernando@teste.com Esta fazendo login -> Tue, 10 Aug 21 05:36:42 +0200
+Usuário -> Fernando, do Email -> fernando@teste.com Esta fazendo logout -> Tue, 10 Aug 21 05:36:51 +0200
+Usuário -> Fernando, do Email -> fernando@teste.com Esta fazendo login -> Tue, 10 Aug 21 05:39:39 +0200
+Usuário -> Fernando, do Email -> fernando@teste.com Esta fazendo logout -> Tue, 10 Aug 21 08:08:01 +0200
+Usuário -> Fernando, do Email -> fernando@teste.com Esta fazendo login -> Tue, 10 Aug 21 08:08:24 +0200
+Usuário -> Fernando, do Email -> fernando@teste.com Esta fazendo logout -> Tue, 10 Aug 21 08:08:47 +0200
