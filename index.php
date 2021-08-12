@@ -68,9 +68,9 @@
 					<div class="profile_details">
 						<div class="col-md-4 serch-part">
 							<div id="sb-search" class="sb-search">
-								<form action="#" method="post">
-									<input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
-									<input class="sb-search-submit" type="submit" value="">
+								<form action="./includes/home.php" target="pageContent" method="post">
+									<input class="sb-search-input" placeholder="Procure..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" name="submit" value="submit">
 									<span class="sb-icon-search"> </span>
 								</form>
 							</div>
@@ -82,7 +82,7 @@
 						</script>
 						<div class="col-md-4 player">
 							<div class="audio-player">
-								<iframe name="audioPlayer" src="audioPlayer.html" height="100" width="100%" style="border:none;"></iframe>
+								<iframe name="audioPlayer" src="audioPlayer.php" height="100" width="100%" style="border:none;"></iframe>
 							</div>
 						</div>
 						<?php if($showLoginAndRegister==true){ include 'includes/loginAndRegister.php'; }?>

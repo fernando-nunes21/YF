@@ -46,7 +46,7 @@
                                         <h3> Cadastre sua musica: </h3>
 										<input type="text" name="musicname" placeholder="Nome da Musica" required><br>
                                         <label>Insira o arquivo da música</label>
-                                        <input type="file" name="filename" accept="audio/mp3, audio/ogg" required>
+                                        <input type="file" name="filename" accept="audio/mpeg, audio/ogg" required>
                                         <input type="text" name="authorname" placeholder="Autor da Musica" required><br>
                                         <label>Insira uma imagem de capa para a música</label>
                                         <input type="file" name="imagefile" accept="image/png, image/jpeg" required><br>

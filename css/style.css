@@ -767,6 +767,7 @@ ul.nav li a span {
 footer {
     background:#3CB371;
     padding: 12px;
+	height: 35px;
     width: 100%;
         border-top: 1px solid #423D3E;
     text-align:center;
@@ -2057,6 +2058,7 @@ h4.tittle.third {
 }
 .artist-grid img {
     width: 100%;
+	height: 25%;
     border-radius: 4px 4px 0px 0px;
 	-o-border-radius: 4px 4px 0px 0px;
 	-moz-border-radius: 4px 4px 0px 0px;
@@ -2218,6 +2220,26 @@ li.list-group-item1 {
     width: 45%;
 	margin-top:6.8%;
 }
+.sign-left button {
+	background: #111;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+    padding: 15px 15px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    font-family: 'Lato-Regular';
+    margin-top: 20px;
+	     border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
 .sign-right input[type="text"] ,.sign-right input[type="password"], .sign-right textarea, .sign-right input[type="file"] {
         width: 100%;
     padding: 15px 13px;
@@ -2271,7 +2293,7 @@ li.list-group-item1 {
     -moz-border-radius: 4px;
 }
 .sign-right input[type="submit"]:hover {
-	background:#EA57A3;
+	background:#A9A8A8;
 }
 .sign-grids p {
     font-size: 13px;

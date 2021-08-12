@@ -1,3 +1,15 @@
+<?php
+	require_once "bankConnection.php";
+	if(!empty($_POST['submit'])){
+		$query = "SELECT * FROM Musics Where musicname LIKE '%".$_POST['search']."%'";
+	}
+	else{
+		$query = "SELECT * FROM Musics ORDER BY idMusics DESC";
+	}
+	
+	$result = mysqli_query($dataBase,$query) or die(mysqli_error($dataBase));
+?>
+
 <link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link href="../css/style.css" rel='stylesheet' type='text/css' />
 	<link href="../css/font-awesome.css" rel="stylesheet">
@@ -19,11 +31,21 @@
 								<div id="myTabContent" class="tab-content">
 									<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
 										<div class="browse-inner">
+											<?php
+												while($row = mysqli_fetch_array($result)){
+													$imageMusic = $row['imagefile'];
+													$musicFile = $row['filename'];
+													$musicName = $row['musicname'];
+
+											?>
 											<div class="col-md-3 artist-grid">
-												<a href="single.html"><img src="images/a3.jpg" title="allbum-name"></a>
-												<a href="single.html"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="../audioPlayer.html" target="audioPlayer">Sukhwinder singh</a>
+												<a href="../audioPlayer.php?filename=<?php echo $musicFile; ?>" target="audioPlayer"><img src="../images/albuns/<?php echo $imageMusic; ?>" title="allbum-name">
+												<a href="../audioPlayer.php?filename=<?php echo $musicFile; ?>" target="audioPlayer"><i class="glyphicon glyphicon-play-circle"></i></a>
+												<a class="art" href="../audioPlayer.php?filename=<?php echo $musicFile; ?>" target="audioPlayer"><?php echo $musicName; ?></a>
 											</div>
+											<?php
+												}
+											?>
 										</div>
 									</div>
 								</div>

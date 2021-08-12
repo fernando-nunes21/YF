@@ -9,7 +9,7 @@
         private $idUser;
         private $idGender;
         
-        function Musics($idMusic,$name,$file,$author,$imageUrl,$idUser,$idGender){
+        function  __construct($idMusic,$name,$file,$author,$imageUrl,$idUser,$idGender){
             $this->idMusic = $idMusic;
             $this->name = $name;
             $this->file = $file;
@@ -19,7 +19,7 @@
             $this->idGender = $idGender;
         }
 
-        function getIdMusics(){
+        function getIdMusic(){
             return $this->idMusic;
         }
 

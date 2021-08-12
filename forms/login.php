@@ -2,6 +2,7 @@
 
     require_once '../includes/bankConnection.php';
     include '../class/User.php';
+    date_default_timezone_set('America/Sao_Paulo');
 
     $userInformations = null;
 
@@ -30,7 +31,7 @@
         session_start();
         $user = $GLOBALS['userInformations'];
         $logsLogin = fopen("../logs/logsLogin.txt","a+");
-        fwrite($logsLogin, "Usuário -> ".$user->getUserName().", do Email -> ".$user->getEmail()." Esta fazendo login -> ".date(DATE_RFC822)."\n");
+        fwrite($logsLogin, "Usuário -> ".$user->getUserName().", do Email -> ".$user->getEmail()."| Esta fazendo login -> ".date(DATE_RFC822)."\n");
         fclose($logsLogin);
         $_SESSION['loginUser'] = serialize($user);
         echo "<script>
