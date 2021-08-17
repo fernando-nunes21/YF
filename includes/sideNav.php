@@ -8,8 +8,8 @@
     <div class="left-side-inner">
         <ul class="nav nav-pills nav-stacked custom-nav">
             <li><a href="includes/home.php" target="pageContent"><i class="lnr lnr-home"></i><span>Home</span></a></li> 
-            <li><a href="#"><i class="lnr lnr-music-note"></i><span>Por Genero</span></a></li>						
-            <li><a href="#"><i class="lnr lnr-heart"></i><span>Favoritos</span></a></li>
+            <li><a href="includes/musicsByGender.php" target="pageContent"><i class="lnr lnr-music-note"></i><span>Por Genero</span></a></li>						
+            <li><a href="includes/favorites.php" target="pageContent"><i class="lnr lnr-heart"></i><span>Favoritos</span></a></li>
             <li><a href="includes/addMusic.php"  target="pageContent"><i class="lnr lnr-tablet"></i><span>Adicione Sua Musica</span></a></li>
             <li><a href="includes/userProfile.php" target="pageContent">
                 <?php if($showLoginAndRegister==true){ ?>

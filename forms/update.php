@@ -42,7 +42,13 @@
         $_SESSION['loginUser'] = serialize($userClient);
     }
 
+    function deleteAllMusicsFromClientDatabase($dataBase, $userId){
+        $query = "DELETE FROM Musics WHERE User_iduser = ".$userId;
+        mysqli_query($dataBase,$query) or die(mysqli_error($dataBase));
+    }
+
     function deleteClientInDatabase($dataBase,$userId){
+        deleteAllMusicsFromClientDatabase($dataBase,$userId);
         $query = "DELETE FROM Users WHERE idUser = ".$userId;
         mysqli_query($dataBase,$query) or die(mysqli_error($dataBase));
         unset($_SESSION['loginUser']); 

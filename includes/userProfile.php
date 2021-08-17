@@ -26,7 +26,7 @@
 							<div class="sign">
 								<div class="sign-left">
 									<img src="../images/<?php echo $userInformations->getProfileImage(); ?>" class="imageYFITOPS-size">
-									<button> Suas músicas enviadas! </button>
+									<button><a href="userMusicsMenu.php" target="pageContent"> Suas músicas enviadas! </a></button>
 								</div>
 								<div class="sign-right">
 									<form action="../forms/update.php" method="post" enctype="multipart/form-data">
